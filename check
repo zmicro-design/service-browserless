@@ -10,9 +10,9 @@ check() {
     cat $SERVICE_CONFIG
   fi
 
-  service::config_set SERVICE_BROWSERLESS_PORT text "Port" 8024
-  service::config_set SERVICE_BROWSERLESS_USERNAME text "Username"
-  service::config_set SERVICE_BROWSERLESS_PASSWORD text "Password"
+  # service::config_set SERVICE_BROWSERLESS_PORT text "Port" 8024
+  # service::config_set SERVICE_BROWSERLESS_USERNAME text "Username"
+  # service::config_set SERVICE_BROWSERLESS_PASSWORD text "Password"
 }
 
 check $@
