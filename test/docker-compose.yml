@@ -1,0 +1,9 @@
+services:
+  browserless:
+    restart: always
+    image: whatwewant/browserless:${SERVICE_BROWSERLESS_IMAGE_VERSION}
+      
+networks:
+  default:
+    external: true
+    name: compose-ingress

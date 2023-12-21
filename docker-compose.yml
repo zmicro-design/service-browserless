@@ -1,0 +1,11 @@
+services:
+  browserless:
+    restart: always
+    image: whatwewant/browserless-chrome:${SERVICE_BROWSERLESS_IMAGE_VERSION}
+    # ports:
+    #   - 0.0.0.0:${SERVICE_BROWSERLESS_PORT}:3000
+
+networks:
+  default:
+    external: true
+    name: compose-ingress
