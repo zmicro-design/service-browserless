@@ -4,6 +4,8 @@ services:
     image: whatwewant/browserless-chrome:${SERVICE_BROWSERLESS_IMAGE_VERSION}
     # ports:
     #   - 0.0.0.0:${SERVICE_BROWSERLESS_PORT}:3000
+    mem_limit: ${SERVICE_RESOURCE_LIMIT_MEM:-"8192m"}
+    cpus: ${SERVICE_RESOURCE_LIMIT_CPUS:-4}
 
 networks:
   default:
